@@ -35,6 +35,6 @@ namespace DynamicPanels.Scripts
         }
     }
     
-    public enum FieldType { Bool, Enum, Int, ModeStatistic }
+    public enum FieldType { Bool, Enum, Int }
 }
 

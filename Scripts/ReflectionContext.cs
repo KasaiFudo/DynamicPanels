@@ -68,17 +68,4 @@ namespace DynamicPanels.Scripts
         }
     }
     
-    /*public class ParametersContext : DynamicDataContext<Parameters>
-    {
-        public ParametersContext(Parameters parameters) : base(parameters)
-        {
-        }
-    }
-
-    public class DebugResolverContext : DynamicDataContext<DebugResolver>
-    {
-        public DebugResolverContext(DebugResolver debugResolver) : base(debugResolver)
-        {
-        }
-    }*/
 }
