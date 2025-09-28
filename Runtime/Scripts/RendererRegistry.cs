@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     [CreateAssetMenu(fileName = "RendererRegistry", menuName = "Scriptable Objects/RendererRegistry")]
     public class RendererRegistry : ScriptableObject

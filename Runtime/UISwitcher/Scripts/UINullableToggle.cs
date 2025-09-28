@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace DynamicPanels.UISwitcher.Scripts
+namespace KasaiFudo.DynamicPanels
 {
 
     [Serializable]

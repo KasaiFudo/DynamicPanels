@@ -1,8 +1,7 @@
-using DynamicPanels.UISwitcher.Scripts;
 using UnityEditor;
 using UnityEngine;
 
-namespace UISwitcherNameSpace {
+namespace KasaiFudo.DynamicPanels.Editor {
 	[CustomEditor(typeof(UINullableToggle))]
 	public class UINullableToggleEditor : UnityEditor.UI.SelectableEditor {
 		private SerializedProperty _isOnNullable, _nullableValueEnabled, _onValueChangedEvent, _onNullableValueChangedEvent;

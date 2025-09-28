@@ -1,4 +1,4 @@
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public interface IDataContext
     {

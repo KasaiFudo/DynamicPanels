@@ -1,5 +1,6 @@
 using UnityEditor;
-namespace UISwitcherNameSpace {
+
+namespace KasaiFudo.DynamicPanels.Editor {
 	public static class ContextMenuUtility {
 		[MenuItem("GameObject/UIComponents/Switcher")]
 		public static void CreateSwitcher(MenuCommand menuCommand) {

@@ -2,11 +2,11 @@ using System;
 using TMPro;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts.Renderers
+namespace KasaiFudo.DynamicPanels
 {
     public class ToggleRenderer : FieldRenderer
     {
-        [SerializeField] private UISwitcher.Scripts.UISwitcher _toggle;
+        [SerializeField] private UISwitcher _toggle;
         [SerializeField] private TMP_Text _label;
 
         public override void Bind(FieldSpec spec, IDataContext context, Action onValueChanged = null)

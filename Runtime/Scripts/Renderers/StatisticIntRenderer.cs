@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts.Renderers
+namespace KasaiFudo.DynamicPanels
 {
     public class StatisticIntRenderer : FieldRenderer
     {

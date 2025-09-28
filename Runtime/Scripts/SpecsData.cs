@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     [CreateAssetMenu(fileName = "SpecsData", menuName = "Scriptable Objects/SpecsData")]
     public class SpecsData : ScriptableObject

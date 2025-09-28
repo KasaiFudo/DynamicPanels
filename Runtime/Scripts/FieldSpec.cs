@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     [Serializable]
     public class FieldSpec

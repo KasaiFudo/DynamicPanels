@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DynamicPanels.Samples.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public class DynamicExampleBootstrap : MonoBehaviour
     {

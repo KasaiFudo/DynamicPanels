@@ -1,8 +1,7 @@
-using DynamicPanels.UISwitcher.Scripts;
 using UnityEditor;
 using UnityEngine;
 
-namespace UISwitcherNameSpace {
+namespace KasaiFudo.DynamicPanels.Editor {
 
 	[CustomEditor(typeof(UISwitcher))]
 	public class UISwitcherEditor : UINullableToggleEditor {

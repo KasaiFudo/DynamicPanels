@@ -2,7 +2,7 @@ using DynamicPanels.Scripts;
 using TMPro;
 using UnityEngine;
 
-namespace DynamicPanels.Samples.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public class ExamplePanel : DynamicPanel
     {

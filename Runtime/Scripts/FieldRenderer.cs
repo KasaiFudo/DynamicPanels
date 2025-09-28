@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public abstract class FieldRenderer : MonoBehaviour
     {

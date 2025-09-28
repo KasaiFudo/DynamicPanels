@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public abstract class DynamicPanel : MonoBehaviour
     {

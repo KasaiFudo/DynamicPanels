@@ -3,7 +3,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-namespace DynamicPanels.Scripts.Renderers
+namespace KasaiFudo.DynamicPanels
 {
     public class DropdownRenderer : FieldRenderer
     {

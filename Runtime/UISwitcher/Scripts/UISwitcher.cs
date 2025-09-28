@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DynamicPanels.UISwitcher.Scripts
+namespace KasaiFudo.DynamicPanels
 {
     public class UISwitcher : UINullableToggle
     {
