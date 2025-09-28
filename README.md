@@ -20,6 +20,10 @@ A flexible and modular system for creating dynamic UI panels in Unity. This pack
 
 Simply download or clone this repository and copy the `DynamicPanels` folder into your Unity project (e.g., under `Assets/`).  
 
+```bash
+git clone https://github.com/KasaiFudo/DynamicPanels.git
+```
+
 # Usage
 
 ## 1. Create Field Specifications
