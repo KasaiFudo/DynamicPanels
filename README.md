@@ -18,10 +18,13 @@ A flexible and modular system for creating dynamic UI panels in Unity. This pack
 
 # Installation
 
-Simply download or clone this repository and copy the `DynamicPanels` folder into your Unity project (e.g., under `Assets/`).  
+Simply download this repository using a link below into your Unity project. 
+
+How:
+**Package Manager --> + --> From git url...**
 
 ```bash
-git clone https://github.com/KasaiFudo/DynamicPanels.git
+https://github.com/KasaiFudo/DynamicPanels.git
 ```
 
 # Usage
@@ -43,7 +46,9 @@ Each FieldSpec can include:
 
 **Type** – field type (Bool, Enum, Int and more).
 
-**Label** – user-visible label. Can be used as key for your localization
+**Label** – user-visible label. Can be used as a key for your localization.
+
+**Description** – user-visible description. Same as `Label` can be used as a key.
 
 **Options** – for enums or selectable values.
 

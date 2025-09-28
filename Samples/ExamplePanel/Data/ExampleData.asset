@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb623f8fd46dd1c4cb030b2ab565fbe4, type: 3}
+  m_Name: ExampleData
+  m_EditorClassIdentifier: 
+  <Specs>k__BackingField:
+  - <Id>k__BackingField: IsOn
+    <Type>k__BackingField: 0
+    <Label>k__BackingField: Is results on
+    <Options>k__BackingField: []
+    <Group>k__BackingField: General
+    <Order>k__BackingField: 0
+    <VisibleIf>k__BackingField: []
+  - <Id>k__BackingField: WriteData
+    <Type>k__BackingField: 1
+    <Label>k__BackingField: What you want to see
+    <Options>k__BackingField:
+    - MainMenu
+    - Settings
+    - Stats
+    - Debug
+    <Group>k__BackingField: General
+    <Order>k__BackingField: 0
+    <VisibleIf>k__BackingField: []
+  - <Id>k__BackingField: ReadData
+    <Type>k__BackingField: 2
+    <Label>k__BackingField: What you see
+    <Options>k__BackingField: []
+    <Group>k__BackingField: General
+    <Order>k__BackingField: 0
+    <VisibleIf>k__BackingField: []
