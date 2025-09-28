@@ -1,0 +1,16 @@
+{
+    "name": "KasaiFudo.DynamicPanels.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:56e66047343f2ad439b2455c6fd37e98"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
