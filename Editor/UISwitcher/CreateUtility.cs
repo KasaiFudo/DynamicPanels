@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
 namespace KasaiFudo.DynamicPanels.Editor {
+	
 	public static class CreateUtility {
+		
 		private const string CANVAS_PREFAB_NAME_IN_RESOURCES = "Canvas";
+		
 		public static void CreateUIElement(string path) {
 			var selectedObject = Selection.activeGameObject;
 

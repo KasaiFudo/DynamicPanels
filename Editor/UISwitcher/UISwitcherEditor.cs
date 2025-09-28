@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using KasaiFudo.DynamicPanels;
 
 namespace KasaiFudo.DynamicPanels.Editor {
 
