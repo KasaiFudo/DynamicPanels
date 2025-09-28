@@ -12,7 +12,7 @@
     {
       "displayName": "Example panel",
       "description": "Example of simply dynamic panel with 2 different ways to use: read and write your data",
-      "path": "Samples~/Configured Localization Sample"
+      "path": "Samples~/ExamplePanel"
     }
   ],
   "dependencies": {}
