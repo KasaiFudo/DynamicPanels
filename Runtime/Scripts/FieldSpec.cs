@@ -13,6 +13,9 @@ namespace KasaiFudo.DynamicPanels
         [field: SerializeField] public string Label  {get; private set;}
         [field: SerializeField] public string Description {get; private set;}
 
+        [Header("Visual")]
+        [field: SerializeField] public Sprite Icon {get; private set;}
+        
         [Header("Options")][Tooltip("For example it can be enums for string or some other values")]
         [field: SerializeField] public string[] Options {get; private set;}
 
