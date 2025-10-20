@@ -1,9 +1,10 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 namespace KasaiFudo.DynamicPanels
 {
-    public class ExamplePanel : DynamicPanel
+    public class ExamplePanel : DynamicPanelBehaviour
     {
         [SerializeField] private GameObject _holder;
         [SerializeField] private GameObject _resultsHolder;
@@ -20,8 +21,16 @@ namespace KasaiFudo.DynamicPanels
 
         public void Initialize(ExampleData data) //This is called by the Bootstrap to simulate DI
         {
+            base.Initialize();
             _data = data;
             _context = new DynamicDataContext<ExampleData>(_data);
+            
+            _dynamic.OnValueChanged += ValueChanged;
+        }
+
+        private void OnDestroy()
+        {
+            _dynamic.OnValueChanged -= ValueChanged;
         }
 
         protected virtual void OnShow()
@@ -29,9 +38,10 @@ namespace KasaiFudo.DynamicPanels
             Build(_context);
         }
 
-        protected override void OnValueChanged() //This is not necessary, but it's a calls every time when some render is changed.
+        private void ValueChanged()
         {
             UpdateReadValues();
+            
             Build(_context);
         }
         

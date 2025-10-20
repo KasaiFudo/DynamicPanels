@@ -1,14 +1,25 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace KasaiFudo.DynamicPanels
 {
-    public abstract class DynamicPanel : MonoBehaviour
+    public abstract class DynamicPanel : IDynamicPanel
     {
-        [SerializeField] private Transform _container;
-        [SerializeField] private RendererRegistry _registry;
-        [SerializeField] protected SpecsData _specsData;
+        protected readonly Transform _container;
+        protected readonly IUIElementFactory _factory;
+        protected readonly SpecsData _specsData;
+
+        public event Action OnValueChanged;
+
+        protected DynamicPanel(Transform container, IUIElementFactory factory, SpecsData specsData)
+        {
+            _container = container;
+            _factory = factory;
+            _specsData = specsData;
+        }
 
         /// <summary>
         /// Builds the dynamic panel UI by creating renderers for fields defined in the provided specifications
@@ -17,24 +28,22 @@ namespace KasaiFudo.DynamicPanels
         /// <param name="context">The data context used for binding the field renderers.</param>
         /// <param name="specs">Optional list of field specifications used for constructing the panel.
         /// If not provided, default specifications from the panel's SpecsData will be used.</param>
-        protected void Build(IDataContext context, List<FieldSpec> specs = null)
+        public void Build(IDataContext context, List<FieldSpec> specs = null)
         {
-            foreach (Transform child in _container) Destroy(child.gameObject);
+            if (_container == null)
+                throw new System.NullReferenceException("DynamicPanel: Container is null.");
+
+            foreach (Transform child in _container)
+                Object.Destroy(child.gameObject);
 
             foreach (var spec in specs ?? _specsData.Specs)
             {
                 if (!IsVisible(spec, context)) continue;
 
-                var prefab = _registry.GetRenderer(spec.Type); //Returns field renderer prefab
-                var fieldRenderer = Instantiate(prefab, _container);
+                var fieldRenderer = _factory.CreateRenderer(spec.Type, _container);
                 fieldRenderer.Bind(spec, context, OnValueChanged);
             }
         }
-
-        /// <summary>
-        /// Called when any field value changes.
-        /// </summary>
-        protected virtual void OnValueChanged() {}
 
         private bool IsVisible(FieldSpec spec, IDataContext parameters)
         {

@@ -1,6 +1,6 @@
 {
   "name": "com.kasaifudo.dynamicpanels",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Dynamic Panels System",
   "description": "A flexible Unity system for building dynamic, data-driven UI panels.",
   "unity": "2021.3",
