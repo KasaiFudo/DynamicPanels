@@ -6,9 +6,9 @@ namespace KasaiFudo.DynamicPanels
 {
     public class DynamicPanelBehaviour : MonoBehaviour
     {
-        [SerializeField] private Transform _container;
-        [SerializeField] private SpecsData _specsData;
-        [SerializeField] private RendererRegistry _registry;
+        [SerializeField] protected Transform _container;
+        [SerializeField] protected SpecsData _specsData;
+        [SerializeField] protected RendererRegistry _registry;
 
         protected IDynamicPanel _dynamic;
 
