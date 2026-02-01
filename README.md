@@ -14,6 +14,8 @@ A flexible and modular system for creating dynamic UI panels in Unity. This pack
 - **Extensible**: Add new field types, renderers, and panel layouts with minimal setup.
 - **Example Assets Included**: Example prefabs and data for testing and prototyping.
 
+https://github.com/user-attachments/assets/08edcb06-d214-4f7f-a59c-0b19f08238da
+
 ---
 
 # Installation
