@@ -11,12 +11,18 @@ namespace KasaiFudo.DynamicPanels
         [SerializeField] protected RendererRegistry _registry;
 
         protected IDynamicPanel _dynamic;
+        protected bool _isInitialized = false;
 
         public virtual void Initialize()
         {
+            if(_isInitialized)
+                return;
+            
             var factory = CreateFactory();
             
             _dynamic = new DefaultDynamicPanel(_container, factory, _specsData);
+            
+            _isInitialized = true;
         }
 
         public void Build(IDataContext context = null, List<FieldSpec> specs = null)
