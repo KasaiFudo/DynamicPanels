@@ -11,30 +11,28 @@ namespace KasaiFudo.DynamicPanels
         [Serializable]
         private struct Entry
         {
-            public FieldType Type;
+            public string RendererKey;
             public FieldRenderer Prefab;
         }
 
         [SerializeField] private List<Entry> _entries;
 
-        private Dictionary<FieldType, FieldRenderer> _map;
+        private Dictionary<string, FieldRenderer> _map;
 
         private void OnEnable()
         {
             if(_entries == null) return;
             
-            _map = _entries.ToDictionary(e => e.Type, e => e.Prefab);
+            _map = _entries.ToDictionary(e => e.RendererKey, e => e.Prefab);
         }
 
-        public FieldRenderer GetRenderer(FieldType type)
+        public FieldRenderer GetRenderer(string rendererKey)
         {
-            if (_map.TryGetValue(type, out var prefab))
+            if (_map.TryGetValue(rendererKey, out var prefab))
                 return prefab;
             
-            throw new Exception($"No renderer registered for type {type}");
+            throw new Exception($"No renderer registered for key {rendererKey}");
         }
     }
-    
-    public enum FieldType { Bool, Enum, Int }
 }
 

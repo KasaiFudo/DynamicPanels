@@ -4,6 +4,6 @@ namespace KasaiFudo.DynamicPanels
 {
     public interface IUIElementFactory
     {
-        IFieldRenderer CreateRenderer(FieldType type, Transform parent);
+        IFieldRenderer CreateRenderer(string renderKey, Transform parent);
     }
 }

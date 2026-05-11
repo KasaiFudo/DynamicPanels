@@ -9,7 +9,7 @@ namespace KasaiFudo.DynamicPanels
     {
         [Header("Basic")]
         [field: SerializeField] public string Id {get; private set;}
-        [field: SerializeField] public FieldType Type {get; private set;}
+        [field: SerializeField] public string RenderKey {get; private set;}
         [field: SerializeField] public string Label  {get; private set;}
         [field: SerializeField] public string Description {get; private set;}
 

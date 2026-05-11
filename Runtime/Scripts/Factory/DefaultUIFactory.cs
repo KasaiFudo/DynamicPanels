@@ -11,9 +11,9 @@ namespace KasaiFudo.DynamicPanels
             _registry = registry;
         }
 
-        public IFieldRenderer CreateRenderer(FieldType type, Transform parent)
+        public IFieldRenderer CreateRenderer(string renderKey, Transform parent)
         {
-            var prefab = _registry.GetRenderer(type);
+            var prefab = _registry.GetRenderer(renderKey);
             
             return Object.Instantiate(prefab, parent);
         }

@@ -40,7 +40,7 @@ namespace KasaiFudo.DynamicPanels
             {
                 if (!IsVisible(spec, context)) continue;
 
-                var fieldRenderer = _factory.CreateRenderer(spec.Type, _container);
+                var fieldRenderer = _factory.CreateRenderer(spec.RenderKey, _container);
                 fieldRenderer.Bind(spec, context, OnValueChanged);
             }
         }
