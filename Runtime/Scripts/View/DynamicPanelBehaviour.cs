@@ -19,9 +19,9 @@ namespace KasaiFudo.DynamicPanels
             _dynamic = new DefaultDynamicPanel(_container, factory, _specsData);
         }
 
-        public void Build(IDataContext context, List<FieldSpec> specs = null)
+        public void Build(IDataContext context = null, List<FieldSpec> specs = null)
         {
-            _dynamic.Build(context, specs);
+            _dynamic.Build(specs, context);
         }
 
         protected virtual IUIElementFactory CreateFactory()

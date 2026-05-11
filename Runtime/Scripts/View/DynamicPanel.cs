@@ -28,10 +28,10 @@ namespace KasaiFudo.DynamicPanels
         /// <param name="context">The data context used for binding the field renderers.</param>
         /// <param name="specs">Optional list of field specifications used for constructing the panel.
         /// If not provided, default specifications from the panel's SpecsData will be used.</param>
-        public void Build(IDataContext context, List<FieldSpec> specs = null)
+        public void Build(List<FieldSpec> specs, IDataContext context = null)
         {
             if (_container == null)
-                throw new System.NullReferenceException("DynamicPanel: Container is null.");
+                throw new NullReferenceException("DynamicPanel: Container is null.");
 
             foreach (Transform child in _container)
                 Object.Destroy(child.gameObject);

@@ -36,7 +36,7 @@ MonoBehaviour:
     <Order>k__BackingField: 0
     <VisibleIf>k__BackingField: []
   - <Id>k__BackingField: ReadData
-    <RenderKey>k__BackingField: int
+    <RenderKey>k__BackingField: read
     <Label>k__BackingField: What you see
     <Description>k__BackingField: 
     <Icon>k__BackingField: {fileID: 0}

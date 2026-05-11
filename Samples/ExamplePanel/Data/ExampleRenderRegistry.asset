@@ -15,7 +15,7 @@ MonoBehaviour:
   _entries:
   - RendererKey: bool
     Prefab: {fileID: 1291350473517660708, guid: e0adeccb398dedd42be85554cff245fa, type: 3}
-  - RendererKey: int
+  - RendererKey: read
     Prefab: {fileID: 8564387945137557484, guid: 52f4b6a169fa44045923ab0ce7fef59c, type: 3}
   - RendererKey: enum
     Prefab: {fileID: 93326682564441971, guid: 73ad9f924a979e7438790df6b50d6d9d, type: 3}

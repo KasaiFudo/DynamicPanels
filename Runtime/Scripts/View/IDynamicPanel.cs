@@ -7,6 +7,6 @@ namespace KasaiFudo.DynamicPanels
     {
         event Action OnValueChanged;
         
-        void Build(IDataContext context, List<FieldSpec> specs = null);
+        void Build(List<FieldSpec> specs, IDataContext context = null);
     }
 }
