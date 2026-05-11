@@ -14,15 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Specs>k__BackingField:
   - <Id>k__BackingField: IsOn
-    <Type>k__BackingField: 0
+    <RenderKey>k__BackingField: bool
     <Label>k__BackingField: Is results on
+    <Description>k__BackingField: 
+    <Icon>k__BackingField: {fileID: 0}
     <Options>k__BackingField: []
     <Group>k__BackingField: General
     <Order>k__BackingField: 0
     <VisibleIf>k__BackingField: []
   - <Id>k__BackingField: WriteData
-    <Type>k__BackingField: 1
+    <RenderKey>k__BackingField: enum
     <Label>k__BackingField: What you want to see
+    <Description>k__BackingField: 
+    <Icon>k__BackingField: {fileID: 0}
     <Options>k__BackingField:
     - MainMenu
     - Settings
@@ -32,8 +36,10 @@ MonoBehaviour:
     <Order>k__BackingField: 0
     <VisibleIf>k__BackingField: []
   - <Id>k__BackingField: ReadData
-    <Type>k__BackingField: 2
+    <RenderKey>k__BackingField: int
     <Label>k__BackingField: What you see
+    <Description>k__BackingField: 
+    <Icon>k__BackingField: {fileID: 0}
     <Options>k__BackingField: []
     <Group>k__BackingField: General
     <Order>k__BackingField: 0
